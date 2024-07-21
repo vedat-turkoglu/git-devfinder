@@ -1,0 +1,147 @@
+.card {
+  padding-block: 2.75rem 3rem;
+  padding-inline: 3rem;
+  margin-block-start: 1.5rem;
+  border-radius: 0.9375rem;
+  box-shadow: var(--box-shadow);
+  background-color: var(--color-5);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: row;
+  gap: 2.3125rem;
+}
+
+.user-photo {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  margin-block-start: 0.25rem;
+  border-radius: 50%;
+}
+
+.user-flex-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2.user-name {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-6);
+}
+
+.user-link {
+  font-size: 1rem;
+  margin-block-start: 0.125rem;
+  color: #0079ff;
+}
+
+.registration-date {
+  margin-block-start: 0.5rem;
+  color: var(--color-3);
+}
+
+.mr-left {
+  margin-inline-start: clamp(0rem, 154vw + -77rem, 9.625rem);
+}
+
+p.user-bio {
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-block-start: -2.375rem;
+  color: var(--color-4);
+}
+
+.user-social-counts-box {
+  padding: 0.9375rem 2rem 1.0625rem 2rem;
+  margin-block: 2rem 2.3125rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 0.0625rem;
+  background-color: var(--color-1);
+}
+
+.user-info-links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.1875rem;
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 50em) {
+  .card {
+    padding: 2.5rem;
+  }
+
+  .card__header {
+    gap: 2.5625rem;
+    align-items: center;
+  }
+
+  .user-flex-container {
+    display: block;
+  }
+
+  .registration-date {
+    margin-block-start: 0.25rem;
+    font-size: 0.9375rem;
+  }
+
+  p.user-bio {
+    margin-block-start: 1.5rem;
+  }
+
+  .user-social-counts-box {
+    margin-block: 2rem 1.875rem;
+  }
+}
+
+/* *** MEDIA QUESRIES - PHONE *** */
+@media screen and (max-width: 25em) {
+  .card {
+    padding-block: 2rem 3rem;
+    padding-inline: 1.5rem;
+  }
+
+  .card__header {
+    gap: 1.1875rem;
+  }
+
+  .user-photo {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  h2.user-name {
+    font-size: 1rem;
+  }
+
+  .user-link {
+    font-size: 0.8125rem;
+    margin-block-start: 0;
+  }
+
+  .registration-date {
+    margin-block-start: 0.375rem;
+    font-size: 0.8125rem;
+  }
+
+  p.user-bio {
+    font-size: 0.8125rem;
+    margin-block-start: 2.0625rem;
+  }
+
+  .user-social-counts-box {
+    padding: 1.125rem 0.875rem 1.1875rem 0.9375rem;
+    margin-block: 1.4375rem 1.5rem;
+  }
+
+  .user-info-links-container {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}

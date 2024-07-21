@@ -1,0 +1,21 @@
+.info-link {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9375rem;
+}
+
+.info-link a {
+  color: var(--color-4);
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 50em) {
+}
+
+/* *** MEDIA QUESRIES - PHONE *** */
+@media screen and (max-width: 25em) {
+  .info-link {
+    font-size: 0.8125rem;
+    gap: 0.8125rem;
+  }
+}

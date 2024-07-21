@@ -1,0 +1,40 @@
+.social-box {
+  display: inline-block;
+  line-height: auto;
+  text-align: left;
+  flex: 1;
+}
+
+.social-box h3 {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-block-end: 0.0625rem;
+  color: var(--color-4);
+}
+
+.social-box p {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-6);
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 50em) {
+}
+
+/* *** MEDIA QUESRIES - PHONE *** */
+@media screen and (max-width: 25em) {
+  .social-box {
+    text-align: center;
+    width: cal;
+  }
+
+  .social-box h3 {
+    font-size: 0.6875rem;
+    margin-block-end: 0.5rem;
+  }
+
+  .social-box p {
+    font-size: 1rem;
+  }
+}

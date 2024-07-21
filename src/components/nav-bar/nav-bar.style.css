@@ -1,0 +1,55 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 9rem;
+  margin-block-end: 2.25rem;
+}
+
+.logo {
+  font-size: 1.625rem;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: lowercase;
+  color: var(--color-2);
+}
+
+.theme-switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  color: var(--color-3);
+}
+
+#toggle-switch {
+  appearance: none;
+}
+
+.theme-switch:hover {
+  color: var(--color-7);
+}
+
+.theme-switch span {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.46;
+  letter-spacing: 2.5px;
+  color: inherit;
+}
+
+/* *** MEDIA QUESRIES - TABLET *** */
+@media screen and (max-width: 800px) {
+  nav {
+    margin-block-start: 8.75rem;
+  }
+}
+
+/* *** MEDIA QUESRIES - PHONE *** */
+@media screen and (max-width: 400px) {
+  nav {
+    margin-block-start: 1.9375rem;
+  }
+}
